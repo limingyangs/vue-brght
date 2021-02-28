@@ -1,0 +1,249 @@
+@charset "utf-8";
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */
+{
+  margin: 0;
+  padding: 0;
+}
+
+h1, p, li {
+  cursor: Default;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */
+{
+  outline: none;
+  font: 12px/1.5 tahoma, arial, 微软雅黑, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+body {
+  background: url("../images/bj.jpg") no-repeat fixed;
+  background-size: cover;
+  /*font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;*/
+}
+
+.post-meta {
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  color: #99a2aa;
+  margin: 3px 0 10px;
+  font-size: 12px;
+  display: block;
+}
+
+
+.icon-ic_userlevel_6 {
+  color: #ff0000;
+}
+
+.icon-ic_userlevel_5 {
+  color: #FF6C00;
+}
+
+.icon-ic_userlevel_4 {
+  color: #FFB37C;
+}
+
+.icon-ic_userlevel_3 {
+  color: #92D1E5;
+}
+
+.icon-ic_userlevel_2 {
+  color: #95DDB2;
+}
+
+.icon-ic_userlevel_1 {
+  color: #BFBFBF;
+}
+
+.icon-ic_userlevel_ {
+  color: #BFBFBF;
+}
+
+.lv_6 {
+  color: #ff0000;
+}
+
+.lv_5 {
+  color: #FF6C00;
+}
+
+.lv_4 {
+  color: #FFB37C;
+}
+
+.lv_3 {
+  color: #92D1E5;
+}
+
+.lv_2 {
+  color: #95DDB2;
+}
+
+.lv_1 {
+  color: #BFBFBF;
+}
+
+.lv_0 {
+  color: #BFBFBF;
+}
+
+
+.post-meta:hover {
+  color: #ff85ad;
+}
+
+time {
+  display: inline-block;
+  text-align: left;
+}
+
+
+/*透明背景虚化*/
+.set-x-y:after, #foot:after {
+  position: absolute;
+  background: url(../images/bj.jpg) no-repeat fixed;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  filter: blur(25px);
+  display: block !important;
+}
+
+el-block {
+  display: block;
+}
+
+.set-x-y, #foot {
+  background: hsla(0, 2%, 25%, 0.92) top;
+  /*background: hsla(0, 61%, 80%, 0.92) border-box;*/
+  color: #555;
+  position: relative;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.giligili-item {
+  padding: 16px 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+/*透明背景虚化相对定位*/
+.main-message, .main-nva, .main-right-frame, .main-left-relation ul, .main-left-music-main, #foot p, .empty {
+  position: relative;
+  z-index: 1;
+}
+
+/*滚动条样式*/
+/*::-webkit-scrollbar {*/
+/*    width: 0px;*/
+/*    height: 0px;*/
+/*    background-color: transparent;*/
+/*}*/
+/*::-webkit-scrollbar-track,*/
+/*::-webkit-scrollbar-thumb {*/
+/*    border-radius: 999px;*/
+/*    border: 3px solid transparent;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*::-webkit-scrollbar-track {
+    box-shadow: 2px 2px 5px transparent inset;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow: 5px 5px  5px rgba(27, 43, 27, 0.44) inset;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}*/
+
+/** 重置列表元素 **/
+ul, ul > li {
+  list-style: none;
+}
+
+.ant-timeline-item-head-custom {
+
+  background-color: transparent!important;
+
+}
+
+/** 重置文本格式元素 **/
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* 清除浮动 */
+.ks-clear:after, .clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.ks-clear, .clear {
+  *zoom: 1;
+}
+
+
+.markdown {
+  font-size: 14px;
+  margin: 50px auto 0;
+}
+
+
+.markdown img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+
+
